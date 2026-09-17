@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Plaintext
 
 # VS Code settings
@@ -9,10 +8,8 @@ __pycache__/
 
 # Secrets
 .env
-=======
 __pycache__/
 .venv/
 venv/
 .vscode/
 .DS_Store
->>>>>>> e05edd9 (Add professional README and secure gitignore)
