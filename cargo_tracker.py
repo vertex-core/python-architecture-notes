@@ -19,7 +19,7 @@ while True:
         item["status"] = input("Enter the Status: ")
         item["name"] = input("Enter the Name: ")
         inventory.append(item)
-    if choice == "2":
+    elif choice == "2":
         print("//////////////////////////////")
         print(f"Id is {item["id"]}")
         print(f"Weight is {item["weight"]}kg")
