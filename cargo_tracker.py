@@ -20,6 +20,7 @@ while True:
         item["name"] = input("Enter the Name: ")
         inventory.append(item)
     elif choice == "2":
+        # This will show everything saved in the inventory list
         print("//////////////////////////////")
         print(f"Id is {item["id"]}")
         print(f"Weight is {item["weight"]}kg")
