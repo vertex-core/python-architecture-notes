@@ -1,4 +1,8 @@
 inventory = []
+"""
+This loop controls the main menu interface.
+It will keep running until the user types '4' to exit.
+"""
 while True:
     print("Cargo Tracker Menu:")
     print("1. Add Cargo Item")
@@ -7,6 +11,7 @@ while True:
     print("4. Exit")
     choice = input("Enter your choice (1-4): ")
     if choice == "1":
+        # This is blank place to save the cargo information
         item = {}
         item["id"] = input("Enter ID: ")
         item["weight"] = input("Enter Weight: ")
