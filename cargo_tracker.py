@@ -28,3 +28,24 @@ while True:
         print(f"Status is {item["status"]}")
         print(f"Name is { item["name"]}")
         print("//////////////////////////////")
+    elif choice == "3":
+        lookup_id = input("Enter ID to update: ")
+
+        # 1. Write "Not Found" on the sticky note before searching
+        found = False
+
+        # 2 & 3. Walk through the warehouse checking boxes
+        for current_item in inventory:
+            if current_item["id"] == lookup_id:
+                new_status = input("Enter the new Status: ")
+                current_item["status"] = new_status
+                print("Status updated successfully!")
+
+                # 4. We found it! Change the sticky note to "True"
+                found = True
+                break
+
+        # 5. The search is over. Look at the sticky note.
+        # If it still says "False", print the error.
+        if found == False:
+            print("Error: Cargo ID not found.")
