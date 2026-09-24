@@ -17,7 +17,7 @@ def add_cargo(inventory):
 # 3. Define the main menu interface
 def menu(inventory):
     while True:
-        print("\n--- Cargo Tracker Menu ---")
+        print("--- Cargo Tracker Menu ---")
         print("1. Add Cargo Item")
         print("2. View Cargo Items")
         print("3. Update Cargo Item Status")
