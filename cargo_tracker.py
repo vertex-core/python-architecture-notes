@@ -11,7 +11,7 @@ def add_cargo(inventory):
     item["status"] = input("Enter the Status: ")
     item["name"] = input("Enter the Name: ")
     inventory.append(item)
-    print("Cargo added successfully!")
+    print("Cargo added Successfully!")
 
 
 # 3. Define the main menu interface
@@ -49,7 +49,7 @@ def menu(inventory):
                 if current_item["id"] == lookup_id:
                     new_status = input("Enter the new Status: ")
                     current_item["status"] = new_status
-                    print("Status updated successfully!")
+                    print("Status updated Successfully!")
                     found = True
                     break
 
