@@ -1,8 +1,8 @@
-# 1. Set up the empty list to hold our data
+#  1 Set up the empty list to hold our data
 inventory = []
 
 
-# 2. Define the specialized departments (Functions)
+#  ** 2. Define the specialized departments (Functions)
 def add_cargo(inventory):
     item = {}
     item["id"] = input("Enter ID: ")
@@ -14,7 +14,7 @@ def add_cargo(inventory):
     print("Cargo added Successfully!")
 
 
-# 3. Define the main menu interface
+# ** 3. Define the main menu interface
 def menu(inventory):
     while True:
         print("--- Cargo Tracker Menu ---")
@@ -26,11 +26,11 @@ def menu(inventory):
         choice = input("Enter your choice (1-4): ")
 
         if choice == "1":
-            # We call the function we built at the top
+            # ** We call the function we built at the top
             add_cargo(inventory)
 
         elif choice == "2":
-            # Loop through and print every item in the list
+            # ** Loop through and print every item in the list
             for item in inventory:
                 print("////////////////////////////////")
                 print(f"Id is {item['id']}")
@@ -41,7 +41,7 @@ def menu(inventory):
                 print("////////////////////////////////")
 
         elif choice == "3":
-            # Search for a specific ID and update it
+            # ** Search for a specific ID and update it
             lookup_id = input("Enter ID to update: ")
             found = False
 
@@ -64,5 +64,5 @@ def menu(inventory):
             print("Invalid input. Please type 1, 2, 3, or 4.")
 
 
-# 4. Press the "Start" button to actually run the program
+# ** 4. Press the "Start" button to actually run the program
 menu(inventory)
