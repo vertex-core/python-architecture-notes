@@ -6,8 +6,8 @@ port_queue = deque(
         {
             "id": "105AA",
             "destination": "Washington",
-            "weight": 100,  # Stored as a number for calculations
-            "distance": 200,  # Stored as a number for calculations
+            "weight": 100,  # * Stored as a number for calculations
+            "distance": 200,  # * Stored as a number for calculations
             "fuel": 50,
         },
         {
