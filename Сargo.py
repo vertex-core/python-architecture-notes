@@ -1,6 +1,6 @@
 from collections import deque
 
-# 1. Initialize a single unified queue of cargo trucks (FIFO structure)
+# * 1.Initialize a single unified queue of cargo trucks (FIFO structure)
 port_queue = deque(
     [
         {
@@ -23,16 +23,16 @@ port_queue = deque(
 COST_PER_KM_TON = 0.5
 
 
-# 2. Pure function to calculate trip cost
+# * 2. Pure function to calculate trip cost
 def calculate_trip_cost(weight, distance):
     return weight * distance * COST_PER_KM_TON
 
 
-# 3. Processing the queue simulation loop
+# * 3. Processing the queue simulation loop
 print("=== PORT LOGISTICS PROCESSING START ===\n")
 
 while port_queue:
-    # Pop from the front of the queue instantly (O(1) time complexity)
+    # * Pop from the front of the queue instantly (O(1) time complexity)
     current_truck = port_queue.popleft()
 
     truck_id = current_truck["id"]
@@ -41,7 +41,7 @@ while port_queue:
     distance = current_truck["distance"]
     fuel = current_truck["fuel"]
 
-    # Calculate cost using our function
+    # * Calculate cost using our function
     total_cost = calculate_trip_cost(weight, distance)
 
     print(f"Processing Truck ID: {truck_id}")
